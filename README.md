@@ -4,4 +4,4 @@
 https://www.youtube.com/watch?v=2aeMRB8LL4o&t=594s
 
 - last pause
-21:00
+28:12
