@@ -32,7 +32,7 @@ function Sidebar({
     }
   ], [])
 
-  return ( 
+  return (
     <div
       className='
         flex h-full
@@ -75,18 +75,18 @@ function Sidebar({
           classname='
             overflow-y-auto
             h-full
-            border
           '
         >
           <Library />
         </Box>
       </div>
-      <main 
+      <main
         className={`
           h-full
           flex-1
           overflow-y-auto
           py-2
+          mr-2
         `}
       >
         {children}
