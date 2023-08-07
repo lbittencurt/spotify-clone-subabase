@@ -10,33 +10,60 @@ function Library() {
 
   return (
     <div
-      className="
+      className='
         flex
-        items-center
-        justify-between
-        px-5
-        pt-4
-      "
+        flex-col
+      '
     >
       <div
         className="
-          inline-flex
+          flex
           items-center
-          gap-x-2
+          justify-between
+          px-5
+          pt-4
         "
       >
-        <TbPlaylist classname="text-neutral-400" size={26} />
-        <p
-          className='
-            text-neutral-400
-            font-medium
-            text-md
-          '
+        <div
+          className="
+            inline-flex
+            items-center
+            gap-x-2
+          "
         >
-          Your Library
-        </p>
+          <TbPlaylist classname="text-neutral-400" size={26} />
+          <p
+            className='
+              text-neutral-400
+              font-medium
+              text-md
+            '
+          >
+            Your Library
+          </p>
+        </div>
+        <AiOutlinePlus
+          onClick={onClick}
+          size={20}
+          className="
+            text-neutral-400
+            cursor-pointer
+            hover:text-white
+            transition
+          "
+        />
       </div>
-      <AiOutlinePlus />
+      <div
+        className='
+          flex
+          flex-col
+          gap-y-2
+          mt-4
+          px-3
+        '
+      >
+        List of Songs
+      </div>
     </div>
   )
 }
