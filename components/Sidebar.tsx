@@ -21,7 +21,7 @@ function Sidebar({
     {
       icon: HiHome,
       label: 'Home',
-      active: pathname!== '/search',
+      active: pathname !== '/search',
       href: '/'
     },
     {
@@ -30,7 +30,7 @@ function Sidebar({
       active: pathname === '/search',
       href: '/search'
     }
-  ], [])
+  ], [pathname])
 
   return (
     <div
@@ -72,7 +72,7 @@ function Sidebar({
           </div>
         </Box>
         <Box
-          classname='
+          className='
             overflow-y-auto
             h-full
           '
