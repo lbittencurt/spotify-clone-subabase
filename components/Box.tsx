@@ -2,12 +2,12 @@ import { twMerge } from 'tailwind-merge'
 
 interface BoxProps {
   children: React.ReactNode
-  classname?: string
+  className?: string
 }
 
 function Box({
   children,
-  classname
+  className
 }: BoxProps) {
   return (
     <div
@@ -16,7 +16,7 @@ function Box({
         rounded-lg
         h-fit
         w-full
-      `, classname )}
+      `, className)}
     >
       {children}
     </div>
